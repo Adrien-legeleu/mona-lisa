@@ -2,10 +2,162 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=`, initial-scale=1.0" />
-    <title>Porsche</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mona Lisa</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>porsche</h1>
+    <header>
+      <nav class="nav">
+        <div class="nav-shadow"></div>
+        <ul>
+          <li><a href="/">Accueil</a></li>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#history">Histoire</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <div class="hero-img">
+        <div class="hero-img-2">
+          <div class="shadow-img"></div>
+          <img
+            src="/Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg.webp"
+            alt="La Joconde (Mona Lisa) de Léonard de Vinci"
+          />
+        </div>
+      </div>
+      <div class="hero-content">
+        <h1 class="title">La Joconde — Mona Lisa</h1>
+        <p class="desc">
+          Chef-d’œuvre de Léonard de Vinci, célèbre pour son sourire énigmatique
+          et son regard qui suit le visiteur. Une icône de la Renaissance, où
+          science, lumière et subtilité du sfumato se rencontrent.
+        </p>
+        <a class="btn" href="#about">Découvrir l’œuvre</a>
+      </div>
+    </div>
+
+    <section id="about" class="container">
+      <div class="about-content">
+        <h2>La Joconde — l’art du mystère</h2>
+        <p>
+          Œuvre majeure de la Renaissance, la Joconde fascine par son sourire
+          insaisissable et la maîtrise du <em>sfumato</em>. Sa lumière douce,
+          ses transitions sans contours et la sérénité du regard composent une
+          présence presque vivante. Plus qu’un portrait, un équilibre rare entre
+          science, sensibilité et silence.
+        </p>
+      </div>
+      <div class="about-img">
+        <img
+          src="/Design sans titre (6).png"
+          alt="Détail stylisé de la Joconde"
+          loading="lazy"
+        />
+      </div>
+    </section>
+    <section id="leonard" class="container-leonard">
+      <div class="leonard-img">
+        <img
+          src="/Design sans titre (7).png"
+          alt="Détail stylisé de la Joconde"
+          loading="lazy"
+        />
+      </div>
+      <div class="leonard-content">
+        <h2>Léonard de Vinci — l’architecte du regard</h2>
+        <p>
+          Peintre, inventeur et anatomiste, Léonard unit l’observation
+          scientifique à la poésie du <em>sfumato</em> : des couches ultra-fines
+          qui fondent la lumière, effacent les contours et font naître le
+          vivant. Par la <em>perspective atmosphérique</em>, il dilue l’horizon
+          ; par la justesse anatomique, il donne poids aux mains et profondeur
+          au visage. Ici, chaque transition est un souffle, chaque ombre une
+          hypothèse : l’art comme expérience, où la connaissance nourrit
+          l’émotion.
+        </p>
+      </div>
+    </section>
+
+    <section class="styles-content">
+      <div class="styles-img">
+        <div>
+          <img src="/joconde fume.jpeg" alt="" />
+          <div>
+            <h3>Sapeck (Eugène Bataille) — La Joconde fumant la pipe (1887)</h3>
+          </div>
+        </div>
+        <div>
+          <img src="/8314048.jpeg" alt="" />
+          <div>
+            <h3>Banksy — Mona Lisa (Bazooka/Rocket Launcher)</h3>
+          </div>
+        </div>
+        <div>
+          <img src="/madsaki.jpeg" alt="" />
+          <div>
+            <h3>MADSAKI — Mona Lisa (series)</h3>
+          </div>
+        </div>
+        <div>
+          <img src="/self-portrait-mona-lisa.jpg" alt="" />
+          <div>
+            <h3>Salvador Dalí — Self-Portrait Mona Lisa</h3>
+          </div>
+        </div>
+        <div>
+          <img
+            src="/The_Joconde_by_a_student_of_Leonardo_da_Vinci.png"
+            alt=""
+          />
+          <div>
+            <h3>
+              École de Léonard de Vinci — La Joconde (copie d’atelier), début
+              XVIᵉ s.
+            </h3>
+          </div>
+        </div>
+        <div>
+          <img src="/Mona-Lisa-Age-Twelve-856x1024.jpg" alt="" />
+          <div>
+            <h3>Fernando Botero — Mona Lisa, Age Twelve (1959)</h3>
+          </div>
+        </div>
+        <div>
+          <img src="/lhooq.jpg" alt="" />
+          <div>
+            <h3>Marcel Duchamp — L.H.O.O.Q. (1919)</h3>
+          </div>
+        </div>
+        <div>
+          <img
+            src="/L413-Mona-Lisa-by-Jean-Michel-Basquiat-art-print.jpg"
+            alt=""
+          />
+          <div>
+            <h3>Jean-Michel Basquiat — Mona Lisa (1983)</h3>
+          </div>
+        </div>
+      </div>
+      <p class="styles-desc">
+        Une sélection de relectures iconiques de la Joconde : Sapeck et sa «
+        Joconde fumant la pipe » (1887), Duchamp et son irrévérencieux «
+        L.H.O.O.Q. » (1919), une copie d’atelier pour la comparaison, la vision
+        voluptueuse de Botero (1959) et le détournement surréaliste de Dalí. Des
+        variations qui interrogent l’aura de l’original autant qu’elles
+        prolongent son mystère.
+      </p>
+    </section>
+    <section></section>
   </body>
 </html>
