@@ -3,17 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact — Mona Lisa</title>
+
+    <!-- Titre de l'onglet -->
+    <title>Contact, Mona Lisa</title>
+
+    <!-- Imports Google Fonts (titres + textes) -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
+    <!-- ===== Header + Navigation ===== -->
     <header>
       <nav class="nav">
         <div class="nav-shadow"></div>
+        <!-- petite ombre sous la nav -->
         <ul>
           <li><a href="./">Accueil</a></li>
           <li><a href="./#about">À propos</a></li>
@@ -23,7 +33,9 @@
       </nav>
     </header>
 
+    <!-- ===== Contenu principal ===== -->
     <main class="contact">
+      <!-- Bloc de présentation du formulaire -->
       <section class="contact-hero">
         <h1>Contact</h1>
         <p>
@@ -31,13 +43,16 @@
         </p>
       </section>
 
+      <!-- Grille avec formulaire à gauche et infos à droite -->
       <section class="contact-grid">
+        <!-- ===== Formulaire de contact ===== -->
         <form
           class="contact-form"
           action="mailto:hello@example.com"
           method="post"
           enctype="text/plain"
         >
+          <!-- Champ Nom -->
           <div class="field">
             <label for="name">Votre nom</label>
             <input
@@ -49,6 +64,7 @@
             />
           </div>
 
+          <!-- Champ E-mail -->
           <div class="field">
             <label for="email">Votre e-mail</label>
             <input
@@ -60,6 +76,7 @@
             />
           </div>
 
+          <!-- Champ Objet -->
           <div class="field">
             <label for="subject">Objet</label>
             <input
@@ -70,6 +87,7 @@
             />
           </div>
 
+          <!-- Champ Message -->
           <div class="field">
             <label for="message">Message</label>
             <textarea
@@ -81,9 +99,11 @@
             ></textarea>
           </div>
 
+          <!-- Bouton d’envoi -->
           <button class="btn-contact" type="submit">Envoyer</button>
         </form>
 
+        <!-- ===== Carte d'infos de contact ===== -->
         <div class="card">
           <h3>Informations</h3>
           <ul>
