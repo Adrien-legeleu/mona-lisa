@@ -367,7 +367,7 @@ textarea {
   text-align: center;
 }
 
-/*  Responsive grid */
+/*  grid repsonsoive */
 @media (max-width: 1200px) {
   .styles-img {
     column-count: 3;
@@ -478,7 +478,7 @@ textarea {
   border: 1px solid #0a0a0a;
 }
 
-/* Responsive contact */
+/* contact responsiev */
 @media (max-width: 900px) {
   .contact-grid {
     grid-template-columns: 1fr; /* form au-dessus, infos en dessous */
