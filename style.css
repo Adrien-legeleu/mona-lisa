@@ -10,7 +10,7 @@ body {
   scroll-behavior: smooth;
 }
 
-/* ================= HERO ================= */
+/*  HERO  */
 .hero {
   background: #0c0a08;
   height: 100vh;
@@ -132,7 +132,7 @@ body {
   }
 }
 
-/* ================= NAV ================= */
+/*  NAV  */
 .nav {
   display: flex;
   position: fixed;
@@ -192,7 +192,7 @@ body {
   }
 }
 
-/* ================= Général ================= */
+/*  Général  */
 h1,
 h2,
 h3 {
@@ -205,7 +205,7 @@ textarea {
   font-family: 'Montserrat', system-ui, sans-serif;
 }
 
-/* ================= ABOUT & LEONARD ================= */
+/*  ABOUT & LEONARD  */
 .container,
 .container-leonard {
   height: 120vh;
@@ -312,7 +312,7 @@ textarea {
   }
 }
 
-/* ================= STYLES GRID ================= */
+/*  STYLES GRID  */
 .styles-content {
   background: #f6f5f2;
   padding: 0 100px;
@@ -392,7 +392,7 @@ textarea {
   }
 }
 
-/* ================= CONTACT ================= */
+/*  CONTACT  */
 .contact {
   background: #0c0a08;
   min-height: 100vh;
