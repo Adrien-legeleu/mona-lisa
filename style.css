@@ -3,22 +3,50 @@
   padding: 0;
   box-sizing: border-box;
 }
+.btn-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background: #0c0a08;
+  color: white;
+  border-radius: 12px;
+  font-family: 'Montserrat', sans-serif;
+  border: none;
+  cursor: pointer;
+  z-index: 2000;
+  transition: 0.3s ease;
+}
+.btn-toggle.dark {
+  background: #ffffff;
+  color: black;
+}
+.btn-toggle:hover {
+  opacity: 0.85;
+}
 
 html,
 body {
   background-color: #f5f1e8;
   scroll-behavior: smooth;
 }
+html,
+body.dark {
+  background-color: #121211;
+}
 
 /*  HERO  */
 .hero {
-  background: #0c0a08;
+  background: #f5f1e8;
   height: 100vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 40px;
   padding: 0 50px;
+}
+.hero.dark {
+  background: #121211;
 }
 
 /* Contenu texte de la hero */
@@ -57,6 +85,16 @@ body {
   inset: 0;
   pointer-events: none;
   /* Centre transparent → bords noirs */
+
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 45%,
+    #f5f1e875 60%,
+    #f5f1e8 95%
+  );
+}
+.shadow-img.dark {
   background: radial-gradient(
     circle at center,
     rgba(0, 0, 0, 0) 0%,
@@ -74,26 +112,36 @@ body {
 .title {
   font-size: 6.5rem;
   text-transform: uppercase;
-  color: white;
+  color: black;
   font-weight: 800;
+}
+.title.dark {
+  color: white;
 }
 .desc {
   font-size: 1rem;
-  color: white;
+  color: black;
   font-weight: 600;
+}
+.desc.dark {
+  color: white;
 }
 
 /* bouton hero */
 .btn {
   padding: 20px;
-  background-color: white;
+  background-color: black;
   backdrop-filter: blur(3px);
   border-radius: 20px;
-  color: black;
+  color: white;
   text-decoration: none;
   font-weight: 600;
   font-size: 0.8rem;
   font-family: 'Montserrat', system-ui, sans-serif;
+}
+.btn.dark {
+  background-color: white;
+  color: black;
 }
 
 /* Responsive hero */
@@ -141,10 +189,13 @@ body {
   width: 100%;
   height: 80px;
   z-index: 1000;
-  background: linear-gradient(to bottom, #00000058, #00000000);
   align-items: center;
+  background: linear-gradient(to bottom, #ffffff58, #ffffff00);
   justify-content: center;
   gap: 20px;
+}
+.nav.dark {
+  background: linear-gradient(to bottom, #00000058, #00000000);
 }
 .nav-shadow {
   position: fixed;
@@ -152,26 +203,36 @@ body {
   left: 0;
   width: 100%;
   height: 80px;
-  background-color: #00000037;
+  background-color: #ffffff37;
+
   filter: blur(20px);
+}
+.nav-shadow.dark {
+  background-color: #00000037;
 }
 .nav ul {
   display: flex;
   list-style: none;
   z-index: 10;
   gap: 80px;
-  color: white;
+  color: black;
   font-weight: 600;
   font-size: 0.8rem;
   font-family: 'Montserrat', system-ui, sans-serif;
 }
+.nav.dark ul {
+  color: white;
+}
 .nav a {
   cursor: pointer;
-  color: white;
+  color: black;
   text-decoration: none;
   font-weight: 600;
   font-size: 0.9rem;
   font-family: 'Montserrat', system-ui, sans-serif;
+}
+.nav.dark a {
+  color: white;
 }
 
 /* Responsive nav */
@@ -219,6 +280,10 @@ textarea {
   position: relative;
   overflow: hidden;
 }
+.container.dark,
+.container-leonard.dark {
+  background-color: #1a1918;
+}
 .container-leonard {
   height: 110vh;
 }
@@ -232,9 +297,13 @@ textarea {
   transform: translate(-50%, -50%);
   width: 300%;
   height: 300px;
-  background: #0c0a08;
+  background: #f2f1ef;
+
   filter: blur(50px);
   z-index: 2;
+}
+.container.dark::before {
+  background: #121211;
 }
 
 /* Texte about */
@@ -251,9 +320,17 @@ textarea {
   font-size: 3rem;
   text-transform: uppercase;
 }
+.about-content.dark h2,
+.leonard-content.dark h2 {
+  color: white;
+}
 .about-content p,
 .leonard-content p {
   line-height: 2rem;
+}
+.about-content.dark p,
+.leonard-content.dark p {
+  color: white;
 }
 
 /* Image à côté du texte */
@@ -317,6 +394,9 @@ textarea {
   background: #f6f5f2;
   padding: 0 100px;
 }
+.styles-content.dark {
+  background: #1a1918;
+}
 .styles-img {
   column-count: 4;
   gap: 50px;
@@ -366,6 +446,9 @@ textarea {
   font-weight: 600;
   text-align: center;
 }
+.styles-desc.dark {
+  color: white;
+}
 
 /*  grid repsonsoive */
 @media (max-width: 1200px) {
@@ -398,6 +481,9 @@ textarea {
   min-height: 100vh;
   padding: 30px 50px;
 }
+.contact.dark {
+  background: #f2f1ef;
+}
 .contact-hero {
   text-align: center;
   padding: 60px 0;
@@ -411,10 +497,16 @@ textarea {
   font-size: 48px;
   color: white;
 }
+.contact-hero.dark h1 {
+  color: black;
+}
 .contact-hero p {
   font-family: 'Montserrat', system-ui, sans-serif;
   color: white;
   font-size: 16px;
+}
+.contact-hero.dark p {
+  color: black;
 }
 .contact-grid {
   max-width: 1100px;
@@ -430,15 +522,25 @@ textarea {
   background: #110e0c;
   padding: 20px;
 }
+.card.dark {
+  background: #ffffff;
+  border: 1px solid #00000010;
+}
 .card h3 {
   letter-spacing: 0.02em;
   color: white;
   margin-bottom: 20px;
 }
+.card.dark h3 {
+  color: black;
+}
 .card ul {
   list-style: none;
   font: 400 14px/1.8 'Montserrat', system-ui, sans-serif;
   color: rgba(255, 255, 255, 0.75);
+}
+.card.dark ul {
+  color: rgba(0, 0, 0, 0.75);
 }
 .card ul li + li {
   margin-top: 6px;
@@ -449,6 +551,10 @@ textarea {
   background: #110e0c;
   padding: clamp(16px, 2.4vw, 22px);
 }
+.contact-form.dark {
+  background: #ffffff;
+  border: 1px solid #00000010;
+}
 .field {
   display: grid;
   gap: 8px;
@@ -457,6 +563,9 @@ textarea {
 .field label {
   font-weight: 600;
   color: rgba(255, 255, 255, 0.8);
+}
+.field.dark label {
+  color: rgba(0, 0, 0, 0.8);
 }
 .field input,
 .field textarea {
@@ -468,6 +577,12 @@ textarea {
   color: #ffffff;
   outline: none;
 }
+.field.dark input,
+.field.dark textarea {
+  border: 1px solid #00000010;
+  background: #ffffff;
+  color: #000000;
+}
 .btn-contact {
   display: inline-block;
   border-radius: 999px;
@@ -476,6 +591,11 @@ textarea {
   background: #0a0a0a;
   color: #ffffff;
   border: 1px solid #0a0a0a;
+}
+.btn-contact.dark {
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
 }
 
 /* contact responsiev */
